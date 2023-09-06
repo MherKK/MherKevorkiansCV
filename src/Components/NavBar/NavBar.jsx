@@ -24,7 +24,7 @@ export default function NavBar() {
   return (
     <nav className="nav-container">
       <h1>
-        <Link to="/"><p>Mher Kevorkian</p></Link>
+        <Link to="/">Mher Kevorkian</Link>
       </h1>
 
       <ul ref={ulRef} className={showTab === false ? "desktop-tab-links" : "desktop-tab-links active"}>
@@ -34,13 +34,13 @@ export default function NavBar() {
         <CustomLink to="/skills">Skills</CustomLink>
         <CustomLink to="/achievments">Achievments</CustomLink>
       </ul>
-      <button onClick={(e) => {
+      <div onClick={(e) => {
         e.preventDefault();
         setShowTab(!showTab)
       }}
         className="nav-tab-btn">
-        {showTab === false ? <img src={tab} /> : <img ref={ulRef} style={{ width: '30px' }} src={X} />}
-      </button>
+        {showTab === false ? <img src={tab} /> : <img ref={ulRef} style={{ width: '40px', height: "30px" }} src={X} />}
+      </div>
 
     </nav>
   );

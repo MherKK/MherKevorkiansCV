@@ -1,6 +1,6 @@
 .nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid silver;
     width: 100%;
@@ -17,6 +17,8 @@
     font-size: x-large;
     font-family: 'Osworld', sans-serif;
     font-weight: 800;
+    margin-left: 10px;
+
 }
 
 
@@ -50,9 +52,11 @@
 .nav-tab-btn {
     background-color: transparent;
     border: none;
-    margin-right: 5%;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 
+    margin-right: 10px;
 }
 
 .nav-close-btn {
@@ -64,6 +68,7 @@
 
 .nav-tab-btn>img {
     width: 40px;
+    height: 40px
 }
 
 
@@ -114,7 +119,6 @@
         font-size: 18px;
     }
 
-
     .nav-container>ul {
         margin: 0;
         padding: 40px 0 0 20px;
@@ -122,5 +126,12 @@
 
     body {
         overflow-y: visible;
+    }
+}
+
+
+@media (min-width:800px) {
+    .nav-container {
+        justify-content: space-evenly;
     }
 }
