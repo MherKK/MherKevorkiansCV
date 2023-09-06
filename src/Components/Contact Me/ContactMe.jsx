@@ -9,8 +9,8 @@ export default function ContactUs({ setContactMe }) {
     useEffect(() => {
         let hadnler = (e) => {
             if (!ulRef.current.contains(e.target)) {
-                setContactMe(false)
-                document.body.style.overflowY = "visible"
+                setContactMe(false);
+                document.body.style.overflowY = "visible";
             }
         }
         document.addEventListener("mousedown", hadnler)
@@ -55,6 +55,7 @@ export default function ContactUs({ setContactMe }) {
             })
             setDisplay("none")
             setContactMe(false)
+            alert("Thank you for contacting me")
         } else {
             setDisplay("block")
         }
@@ -97,6 +98,7 @@ export default function ContactUs({ setContactMe }) {
                     <button type="submit" value="Send">SUBMIT</button>
                 </form>
                 <p style={{ color: "red", display: display, fontSize: "14px" }}>Please fill all the required fields</p>
+
             </div>
 
         </div>

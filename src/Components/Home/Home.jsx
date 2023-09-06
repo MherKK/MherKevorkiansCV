@@ -1,15 +1,12 @@
-import { Link } from "react-router-dom";
 import profile from "../../assets/mher.jpg"
 import "./home.css"
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import Cv from "../../assets/Cv.pdf"
 import { useState } from "react";
 import ContactMe from "../Contact Me/ContactMe";
-
 export default function Home() {
 
   const [contactMe, setContactMe] = useState(false)
-
   const [text] = useTypewriter({
     words: ['Hello There', 'Welcome To My Portfolio'],
     loop: {},
