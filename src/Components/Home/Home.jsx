@@ -31,7 +31,13 @@ export default function Home() {
         .
       </p>
       <div className="home-btn">
-        <button onClick={() => setContactMe(true)}>Contact me</button>
+        <button onClick={() => {
+          document.body.scrollTop = 0 //this is for safari
+          document.documentElement.scrollTop = 0 // this is for chrome firefox...
+          document.body.style.overflowY = 'hidden'
+          setContactMe(true)
+
+        }}>Contact me</button>
         <a href={Cv} download="Mher Kevorkian's Cv">Download CV</a>
       </div>
       {contactMe === false ? "" : <ContactMe setContactMe={setContactMe} />}

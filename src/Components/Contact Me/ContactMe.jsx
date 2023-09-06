@@ -10,6 +10,7 @@ export default function ContactUs({ setContactMe }) {
         let hadnler = (e) => {
             if (!ulRef.current.contains(e.target)) {
                 setContactMe(false)
+                document.body.style.overflowY = "visible"
             }
         }
         document.addEventListener("mousedown", hadnler)
@@ -62,7 +63,10 @@ export default function ContactUs({ setContactMe }) {
         <div className="contact-Me">
             <div ref={ulRef} className="contact-Me_form-container">
                 <div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center" }}><p>Contact Me</p>
-                    <img style={{ cursor: "pointer", width: "40px", height: "40px" }} onClick={() => setContactMe(false)} src={close} />
+                    <img style={{ cursor: "pointer", width: "40px", height: "40px" }} onClick={() => {
+                        document.body.style.overflowY = "visible"
+                        setContactMe(false)
+                    }} src={close} />
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="contact-Me_form">
                     <div id="input-ne">
