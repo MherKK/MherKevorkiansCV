@@ -1,0 +1,68 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 180px;
+    border: 12px Solid rgb(100, 100, 100);
+    margin-top: 50px;
+}
+
+.home-about-me {
+    font-size: 17px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.home-btn a,
+button {
+    display: block;
+    text-align: center;
+    padding-block: 8px;
+    color: rgb(77, 77, 77);
+    font-weight: 800;
+    text-decoration: none;
+    background-color: white;
+    width: 160px;
+    border-radius: 18px;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.home-btn a:hover,
+.home-btn>button:hover {
+    color: white;
+    background-color: blue;
+}
+
+
+@media (min-width:700px) {}
+
+@media (min-width:1000px) {
+
+    .home-container {
+        margin-top: 40px;
+    }
+
+    .home-about-me {
+        width: 60%;
+    }
+
+    .home-btn {
+        margin-top: 40px;
+    }
+}
