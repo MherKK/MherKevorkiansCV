@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    margin-bottom: 140px;
 }
 
 .profile {
@@ -11,7 +10,6 @@
     height: 250px;
     border-radius: 180px;
     border: 12px Solid rgb(100, 100, 100);
-    margin-top: 50px;
 }
 
 .home-about-me {
@@ -29,7 +27,7 @@
 }
 
 .home-btn a,
-button {
+.home-btn>button {
     display: block;
     text-align: center;
     padding-block: 8px;
