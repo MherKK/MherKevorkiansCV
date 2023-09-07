@@ -69,6 +69,7 @@ export default function AboutMe() {
             <p>Fast Learner</p>
             <p>Good Communication Skills</p>
             <p>Time Management</p>
+            <p>Researcher</p>
           </div>
 
           <div className="about-me-details">

@@ -3,6 +3,16 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-container>div {
+    border-bottom: 1px solid blue;
+    padding-bottom: 30px;
+}
+
+.skills-container>div:last-of-type {
+    border: none;
 }
 
 .skills {

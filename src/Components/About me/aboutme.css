@@ -16,6 +16,9 @@
     border-bottom: 1px solid blue;
 }
 
+.about-me-top {
+    text-align: center;
+}
 
 
 .aboutme-container>div>p>img {
@@ -26,6 +29,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: center;
 }
 
 .aboutme-container>div>div>p {
@@ -36,7 +40,7 @@
 
 
 .about-me-details {
-    width: 350px;
+    width: 450px;
 }
 
 .about-me-details>h3 {
@@ -68,6 +72,13 @@
     background-color: white;
     color: blue;
     font-size: 30px;
+}
+
+@media (max-width:400px) {
+    .about-me-details {
+        width: 350px;
+    }
+
 }
 
 @media (min-width:1000px) {

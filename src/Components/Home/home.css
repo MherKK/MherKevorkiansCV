@@ -34,12 +34,14 @@
     padding-block: 8px;
     color: rgb(77, 77, 77);
     font-weight: 800;
+    font-size: 18px;
     text-decoration: none;
     background-color: white;
     width: 160px;
     border-radius: 18px;
     border: 2px solid blue;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-btn a:hover,
