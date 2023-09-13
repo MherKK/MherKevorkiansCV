@@ -15,7 +15,6 @@ export default function NavBar() {
       }
     }
     document.addEventListener("mousedown", hadnler)
-
     return () => {
       document.removeEventListener("mousedown", hadnler);
     }
