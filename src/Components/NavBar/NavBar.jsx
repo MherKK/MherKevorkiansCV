@@ -50,7 +50,10 @@ function CustomLink({ to, children, props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
     <li className={isActive ? 'active' : ""}>
-      <Link to={to} {...props}>
+      <Link to={to} onClick={() => {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+      }} {...props}>
         {children}
       </Link>
     </li>
