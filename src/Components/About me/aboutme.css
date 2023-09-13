@@ -40,10 +40,6 @@
 }
 
 
-.about-me-details {
-    width: 450px;
-}
-
 .about-me-details>h3 {
     border-bottom: 1px solid blue;
     padding-bottom: 5px;
@@ -75,9 +71,24 @@
     font-size: 30px;
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .about-me-details {
-        width: 350px;
+        width: 320px;
+    }
+
+}
+
+@media (min-width:420px) {
+    .about-me-details {
+        width: 380px;
+    }
+
+}
+
+
+@media (min-width:620px) {
+    .about-me-details {
+        width: 520px;
     }
 
 }
