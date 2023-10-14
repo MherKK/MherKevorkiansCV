@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 export default function NavBar() {
 
   const [showTab, setShowTab] = useState(false);
-  const ulRef = useRef();
+  const ulRef = useRef("");
 
   useEffect(() => {
     let hadnler = (e) => {
@@ -18,7 +18,7 @@ export default function NavBar() {
     return () => {
       document.removeEventListener("mousedown", hadnler);
     }
-  })
+  }, [])
 
   return (
     <nav className="nav-container">

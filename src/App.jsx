@@ -8,6 +8,7 @@ import Skills from "./Components/Skills/Skills"
 import Achievments from "./Components/Achievments/Achievments";
 import Projects from "./Components/Projects/Projects";
 function App() {
+  console.log("Random");
   return (
     <BrowserRouter>
       <NavBar />

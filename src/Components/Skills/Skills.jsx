@@ -25,7 +25,7 @@ export default function Skills() {
             <h3 className="skills">Skills</h3>
             {skills.map((skill, index) => {
                 return (
-                    <div className={`skills${index % 2 === 0 ? 1 : 2}`}>
+                    <div key={skill.id} className={`skills${index % 2 === 0 ? 1 : 2}`}>
                         <img src={skill.image} />
                         <div>
                             <p className="skill-title">{skill.title}</p>

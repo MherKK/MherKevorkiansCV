@@ -1,22 +1,18 @@
 import profile from "../../assets/mher.jpg"
 import "./home.css"
-import { useTypewriter } from "react-simple-typewriter";
 import Cv from "../../assets/Cv.pdf"
 import { useState } from "react";
 import ContactMe from "../Contact Me/ContactMe";
+import WelcomeText from "./WelcomeText";
 export default function Home() {
 
   const [contactMe, setContactMe] = useState(false)
-  const [text] = useTypewriter({
-    words: ['Hello There', 'Welcome To My Portfolio'],
-    loop: {},
 
-  })
   return (
     <div className="home-container">
       <img className="profile" src={profile} />
       <h3>
-        <i>{text}!</i>
+        <WelcomeText />
       </h3>
       <p className="home-about-me">I am Mher Kevorkian, a highly motivated and detail-oriented software
         engineer in developing web applications

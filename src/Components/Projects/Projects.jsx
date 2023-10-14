@@ -16,6 +16,7 @@ export default function Projects() {
         { id: 3, image: todo, title: "ToDo", description: "It is a TODO list where you can add,delete and complete list that you need to do.", source: "https://github.com/MherKK/todo", webLink: "https://mhers-todo.vercel.app/", tools: "Tools I have used: React.Js, JavaScript, CSS, HTML" },
         { id: 4, image: cv23, title: "My Portfolio", description: "The website is about my education,skills,projects, and achievments.", source: "https://github.com/MherKK/MherKevorkiansCV", webLink: "https://mherkevorkian.vercel.app", tools: "Tools I have used: React.Js, JavaScript, CSS, HTML" },
     ]
+    console.log("Projects");
 
     return (
         <div className="skills-container">
@@ -23,7 +24,7 @@ export default function Projects() {
 
             {projects.map((project, index) => {
                 return (
-                    <div className={`skills${index % 2 === 0 ? 1 : 2}`}>
+                    <div key={project.id} className={`skills${index % 2 === 0 ? 1 : 2}`}>
                         <img style={{ width: '400px', height: '300px', borderRadius: "8px" }} src={project.image} />
                         <div>
                             <p style={{ fontSize: '21px', marginTop: '-10px' }} className="skill-title">{project.title}</p>
