@@ -14,7 +14,7 @@ export default function AboutMe() {
         <div className="about-me-top">
 
           <img className="profile" src={profile} />
-          <a href="emailto : mherkevorkian99@gmail.com"><img src={email} />Mherkevorkian99@gmail.com</a>
+          <a href="mailto : mherkevorkian99@gmail.com"><img src={email} />Mherkevorkian99@gmail.com</a>
           <a href="tel: +374 95 152157"><img src={phone} />+374 (95) 152-157</a>
           <a href="https://maps.app.goo.gl/XBmvWGpV5Ui6HdGPA"><img src={address} /> Yerevan,Armenia</a>
         </div>
