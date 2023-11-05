@@ -23,7 +23,7 @@ export default function Home() {
         engineer and contribute to innovative projects in the tech industry
         .
 
-        dwada
+
       </p>
       <div className="home-btn">
         <button onClick={() => {

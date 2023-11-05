@@ -4,10 +4,15 @@ import cv23 from "../../assets/cv23.png";
 import todo from "../../assets/todo.png";
 import linkblue from "../../assets/linkblue.png";
 import gitblue from "../../assets/gitblue.png";
+import salon from "../../assets/salon.png"
 import "./projects.css"
 export default function Projects() {
 
     let projects = [
+        {
+            id: 0, image: salon, title: "Beauty Salon", description: `The website is about a beauty salon, that clearly shows about salon, its staff, products and services. Also the coolest feauture is that it shows available appointments with real time database. `
+            , source: "https://github.com", webLink: "https://beauty-salon-test.vercel.app", tools: "Tools I have used: React.Js, JavaScript, CSS, HTM, FireBase"
+        },
         {
             id: 1, image: org, title: "Organization for cleaning Armenia's Environment", description: `The website is about an Organization that collects donations from all over the wolrd, and with that donations the Organization will organize events that will invite volunteers to help clean the environmetn.`
             , source: "https://github.com/MherKK/Diploma", webLink: "https://organizaion-for-environment.vercel.app", tools: "Tools I have used: React.Js, JavaScript, CSS, HTML, MySQL, FireBase, Node.JS"
