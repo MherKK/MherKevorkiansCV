@@ -10,6 +10,7 @@ export default function Tasks(){
 
     return(
         <div className="task-container">
+            <h2>All the tasks are solved without using any library or the in-library methods</h2>
             <div className="task-button_container">
                 <button style={taskDisplay === 'string' ? {textDecoration:'underline', textDecorationColor:'blue', textUnderlineOffset:'10px'}: {}} onClick={() => setTaskDisplay('string')}>String </button>
                 <button style={taskDisplay === 'array' ? {textDecoration:'underline', textDecorationColor:'blue', textUnderlineOffset:'10px'}: {}} onClick={() => setTaskDisplay('array')}>Array </button>
