@@ -32,7 +32,7 @@
 
 p {
     text-align: center;
-    width: 400px;
+    width: 300px;
 }
 
 .skill-title {
@@ -45,6 +45,9 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.skills-container img {
+    width: 300px;
+}
 
 @media (min-width:1000px) {
     .skills1 {

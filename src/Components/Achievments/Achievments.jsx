@@ -11,7 +11,7 @@ export default function Achievments() {
         { id: 1, achievment: university, title: "Bachelor's Degree in Information Technology" },
         { id: 2, achievment: school, title: "High School" },
         { id: 3, achievment: jsbasic, title: "JavaScript(Basic)Certificate" },
-        { id: 4, achievment: jsinter, title: "JavaScript(Intermediate)Certificate" }
+        { id: 4, achievment: jsinter, title: "JavaScript(Intermediate) Certificate" }
     ]
 
     return (
@@ -20,7 +20,7 @@ export default function Achievments() {
             {achievments.map((achievs, index) => {
                 return (
                     <div key={achievs.id} className={`skills${index % 2 === 0 ? 1 : 2}`}>
-                        <img style={{ width: '400px', height: '300px' }} src={achievs.achievment} />
+                        <img style={{ height: '300px' }} src={achievs.achievment} />
                         <div>
                             <p style={{ fontSize: '21px', marginTop: '-10px' }} className="skill-title">{achievs.title}</p>
                         </div>

@@ -30,7 +30,7 @@ export default function Projects() {
             {projects.map((project, index) => {
                 return (
                     <div key={project.id} className={`skills${index % 2 === 0 ? 1 : 2}`}>
-                        <img style={{ width: '400px', height: '300px', borderRadius: "8px" }} src={project.image} />
+                        <img style={{  height: '300px', borderRadius: "8px" }} src={project.image} />
                         <div>
                             <p style={{ fontSize: '21px', marginTop: '-10px' }} className="skill-title">{project.title}</p>
                             <p>{project.description}</p>
