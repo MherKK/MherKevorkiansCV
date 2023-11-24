@@ -42,6 +42,6 @@
 }
 
 .footer-container p {
-    line-height: 0;
+    line-height: 15px;
     width: 300px;
 }
