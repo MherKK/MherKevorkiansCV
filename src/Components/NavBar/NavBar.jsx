@@ -10,7 +10,7 @@ export default function NavBar() {
 
   useEffect(() => {
     let hadnler = (e) => {
-      if (!ulRef.current.contains(e.target)) {
+      if (!ulRef.current?.contains(e.target)) {
         setShowTab(false)
       }
     }
@@ -29,6 +29,7 @@ export default function NavBar() {
       <ul ref={ulRef} className={showTab === false ? "desktop-tab-links" : "desktop-tab-links active"}>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/tasks">Tasks</CustomLink>
         <CustomLink to="/projects">Projects</CustomLink>
         <CustomLink to="/skills">Skills</CustomLink>
         <CustomLink to="/achievments">Achievments</CustomLink>
