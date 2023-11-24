@@ -1,9 +1,11 @@
 import CapitalizingString from "./CapitalizeString";
-import './stringtask.css'
+import FindNumberAndSum from "./FindNumberAndSum";
+
 
 export default function StringTasks(){
     return (
-    <div className="string-task_container">
+    <div style={{display:'flex' , flexDirection:'column', alignItems:'center',justifyContent:'center', gap:'20px', width:'350px'}}>
         <CapitalizingString />
+        <FindNumberAndSum />
     </div>)
 }

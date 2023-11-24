@@ -11,9 +11,9 @@ export default function Tasks(){
     return(
         <div className="task-container">
             <div className="task-button_container">
-                <button onClick={() => setTaskDisplay('string')}>String </button>
-                <button onClick={() => setTaskDisplay('array')}>Array </button>
-                <button onClick={() => setTaskDisplay('')}>Mathematical</button>
+                <button style={taskDisplay === 'string' ? {textDecoration:'underline', textDecorationColor:'blue', textUnderlineOffset:'10px'}: {}} onClick={() => setTaskDisplay('string')}>String </button>
+                <button style={taskDisplay === 'array' ? {textDecoration:'underline', textDecorationColor:'blue', textUnderlineOffset:'10px'}: {}} onClick={() => setTaskDisplay('array')}>Array </button>
+                <button style={taskDisplay === '' ? {textDecoration:'underline', textDecorationColor:'blue', textUnderlineOffset:'10px'}: {}} onClick={() => setTaskDisplay('')}>Mathematical</button>
             </div>
 
             {taskDisplay === 'string' ? <StringTasks /> 
