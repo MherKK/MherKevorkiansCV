@@ -10,7 +10,7 @@ export default function ReverseArray(){
             <input type='text' placeholder="Write an array"  style={{height:'30px',width:'180px'}}
             onChange={(e) => setArray(e.target.value)}/>
             <button onClick={() => {
-                let arr = array.split(' ');
+                let arr = array?.split(' ');
                 let reversedArray = [];
                 for(let i = 0 ; i < arr.length ; i++){
                     reversedArray[i] = arr[arr.length - i - 1]
