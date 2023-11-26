@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function RemoveDuplicate(){
     const [array,setArray] = useState();
-    const [nonDuplicatedArray, setNonDuplicatedArray] = useState();
+    const [nonDuplicatedArray, setNonDuplicatedArray] = useState([]);
     function removeDuplicate(arr) {
         let obj = {};
         let cleanarr = [];
@@ -33,7 +33,7 @@ export default function RemoveDuplicate(){
                 removeDuplicate(arr);
             }}  style={{backgroundColor:'transparent', border:'1px solid blue',marginLeft:'20px', height:'30px',width:'100px', cursor:'pointer'}}>Remove Dupl</button>
             <p style={{textAlign:'left'}}>Original Array: [{array}]</p>
-            <p style={{textAlign:'left'}}>Reversed Array: [{nonDuplicatedArray.map((num,index) => {
+            <p style={{textAlign:'left'}}>Reversed Array: [{nonDuplicatedArray?.map((num,index) => {
                 if(index !== nonDuplicatedArray.length - 1){
                     return num + ','
                 }else{
