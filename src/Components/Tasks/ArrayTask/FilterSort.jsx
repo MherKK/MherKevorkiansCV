@@ -25,6 +25,17 @@ export default function FilterSort(){
         }
         return array;
     }
+    function randomizeArray(array) {
+
+        for (let i = 0; i < array.length; i++) {
+            let j = Math.floor(Math.random() * (i + 1));
+            // [array[i], array[j]] = [array[j], array[i]]
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp
+        }
+        return array
+    }
   
     return (
         <div  style={{border:'1px solid black' , padding:'20px'}}>
@@ -57,11 +68,14 @@ export default function FilterSort(){
                         setFilterArray(arraySorter(array))
                     }else if(e.target.value === 'desc') {
                         setFilterArray(array.sort((a, b) => b - a))
+                    }else if(e.target.value === 'random'){
+                        setFilterArray(randomizeArray(array))
                     }
                 }}> 
                     <option>Choose order</option>
                     <option value="asc">Ascending Order</option>
                     <option value="desc">Descending Order</option>
+                    <option value='random'>Randomize Order</option>
                 </select>
             </div>
 
