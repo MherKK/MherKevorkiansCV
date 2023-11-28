@@ -1,5 +1,6 @@
 import BinarySearch from "./BnarySearch";
 import FilterSort from "./FilterSort";
+import FindMaxNumber from "./FindMaxNumber";
 import RemoveDuplicate from "./RemoveDuplicate";
 import ReverseArray from "./ReverseArray";
 
@@ -9,6 +10,7 @@ export default function ArrayTasks(){
         <BinarySearch />
         <FilterSort />
         <RemoveDuplicate />
+        <FindMaxNumber />
         <ReverseArray />
     </div>)
 }
