@@ -33,8 +33,8 @@ export default function IsPrimeNumber(){
                     }
                 }}
             style={{backgroundColor:'transparent', border:'1px solid blue',marginLeft:'20px', height:'30px',width:'100px', cursor:'pointer'}}>Is Prime?</button>
-            {isPrime === true ? <p>The number {num.current.value} is prime</p> : isPrime === false && <p>{num?.current?.value} Is not a prime number</p>}
-            {isPrime === 'NotANumber' && <p style={{color:'red'}}>{num.current.value} is not an integer</p>}
+            {isPrime === true ? <p style={{textAlign:'left'}}>The number {num.current.value} is prime</p> : isPrime === false && <p style={{textAlign:'left'}}>{num?.current?.value} Is not a prime number</p>}
+            {isPrime === 'NotANumber' && <p style={{color:'red',textAlign:'left'}}>{num.current.value} is not an integer</p>}
         </div>
     )
 }
