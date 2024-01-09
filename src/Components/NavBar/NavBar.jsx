@@ -25,7 +25,7 @@ export default function NavBar() {
     <nav className="nav-container">
       <h1 style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
       <img src={logo} width={40}  alt="logo"/>
-        <Link to="/"> Mher | Kevorkian</Link>
+        <Link to="/"> Mher |Kevorkian</Link>
       </h1>
 
       <ul ref={ulRef} className={showTab === false ? "desktop-tab-links" : "desktop-tab-links active"}>
