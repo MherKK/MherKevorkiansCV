@@ -4,6 +4,8 @@ import Cv from "../../assets/Cv.pdf"
 import { useState } from "react";
 import ContactMe from "../Contact Me/ContactMe";
 import WelcomeText from "./WelcomeText";
+import Cube from 'react-3d-cube'
+import '../../index.css'
 export default function Home() {
 
   const [contactMe, setContactMe] = useState(false)
@@ -14,6 +16,14 @@ export default function Home() {
       <h3>
         <WelcomeText />
       </h3>
+      <Cube size={300} index="front">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </Cube>
       <p className="home-about-me">I am Mher Kevorkian, a highly motivated and detail-oriented software
         engineer in developing web applications
         . My key skills include
