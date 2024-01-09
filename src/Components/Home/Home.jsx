@@ -4,6 +4,7 @@ import Cv from "../../assets/Cv.pdf"
 import { useState } from "react";
 import ContactMe from "../Contact Me/ContactMe";
 import WelcomeText from "./WelcomeText";
+import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
 
   const [contactMe, setContactMe] = useState(false)
@@ -25,6 +26,7 @@ export default function Home() {
 
 
       </p>
+      <Analytics />
       <div className="home-btn">
         <button onClick={() => {
           document.body.scrollTop = 0 //this is for safari
