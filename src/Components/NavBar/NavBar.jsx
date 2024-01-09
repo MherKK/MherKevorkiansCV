@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import logo from '../../assets/logo/b.png'
 import "./NavBar.css";
 import tab from "../../assets/tab.png"
 import X from "../../assets/X.png"
@@ -22,8 +23,9 @@ export default function NavBar() {
 
   return (
     <nav className="nav-container">
-      <h1>
-        <Link to="/">Mher Kevorkian</Link>
+      <h1 style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+      <img src={logo} width={40}  alt="logo"/>
+        <Link to="/"> Mher | Kevorkian</Link>
       </h1>
 
       <ul ref={ulRef} className={showTab === false ? "desktop-tab-links" : "desktop-tab-links active"}>
